@@ -1,0 +1,323 @@
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineTella SmartBite - Order</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            🍽️
+        </div>
+
+        <div class="logo-text">
+            <span>CineTella</span>
+            <small>SMARTBITE</small>
+        </div>
+
+    </div>
+
+
+    <div class="menu">
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#taste">
+            Menu
+        </a>
+
+        <a href="index.html#taste">
+            Cuisines
+        </a>
+
+        <a href="how-it-works.html">
+            How It Works
+        </a>
+
+        <a href="order.html" class="header-order">
+            Order Now →
+        </a>
+
+    </div>
+
+</header>
+
+    <!-- ORDER HERO -->
+
+    <section class="order-hero">
+
+        <div class="order-hero-content">
+
+            <p>READY WHEN YOU ARE</p>
+
+            <h1>Your Order</h1>
+
+            <span>
+                Choose your food. Choose your time. Skip the wait.
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ORDER SECTION -->
+
+    <section class="order-section">
+
+        <div class="order-container">
+
+
+            <!-- LEFT : ORDER RECEIPT -->
+
+            <div class="order-card">
+
+                <div class="order-card-header">
+
+                    <div class="cart-icon">
+                        🛒
+                    </div>
+
+                    <div>
+                        <h2>Your Order</h2>
+
+                        <p>
+                            CineTella SmartBite
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="order-line"></div>
+
+
+                <div id="order-list">
+
+                    <div class="empty-order">
+
+                        <div class="empty-icon">
+                            🍽️
+                        </div>
+
+                        <h3>Your order is empty</h3>
+
+                        <p>
+                            Choose a cuisine and add your favorite
+                            food to get started.
+                        </p>
+
+                        <a href="index.html#taste">
+                            Explore Cuisines →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="order-total-box">
+
+                    <span>Total</span>
+
+                    <strong id="total-price">
+                        ৳0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT : CHECKOUT -->
+
+            <div class="checkout-card">
+
+                <p class="checkout-label">
+                    YOUR PICKUP
+                </p>
+
+                <h2>
+                    When should we prepare it?
+                </h2>
+
+                <p class="checkout-description">
+                    Select your details and we'll have your
+                    food ready when you arrive.
+                </p>
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="customer-name">
+                        👤 Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customer-name"
+                        placeholder="Enter your name"
+                    >
+
+                </div>
+
+
+                <!-- PICKUP -->
+
+                <div class="form-group">
+
+                    <label for="pickup-time">
+                        ⏰ Pickup Time
+                    </label>
+
+                    <div class="pickup-section">
+
+    <label for="pickup-time">
+        ⏰ Choose Your Pickup Time
+    </label>
+
+    <input
+        type="time"
+        id="pickup-time"
+        name="pickup-time"
+    >
+
+</div>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    class="place-order-button"
+                    onclick="placeOrder()"
+                >
+
+                    PLACE MY ORDER
+                    <span>→</span>
+
+                </button>
+
+
+                <div
+                    id="order-message"
+                    class="order-message"
+                ></div>
+
+
+                <div class="order-note">
+
+                    🔒 Your order details are used only
+                    to prepare your food.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <h2>CineTella</h2>
+
+                <p class="footer-tagline">
+                    SMARTBITE
+                </p>
+
+                <p>
+                    Smart food ordering for busy students,
+                    teachers and everyone who values their time.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="index.html#taste">Cuisines</a>
+
+                <a href="how-it-works.html">How It Works</a>
+
+                <a href="order.html">Order</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Cuisines</h3>
+
+                <a href="pakistan.html">🇵🇰 Pakistan</a>
+
+                <a href="bangladesh.html">🇧🇩 Bangladesh</a>
+
+                <a href="india.html">🇮🇳 India</a>
+
+                <a href="china.html">🇨🇳 China</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Smart Food. Zero Wait.</h3>
+
+                <p>
+                    Choose your food.
+                    <br>
+                    Choose your time.
+                    <br>
+                    Pick up without the wait.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-line"></div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CineTella SmartBite.
+            </p>
+
+            <p>
+                Made for smarter food ordering.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>

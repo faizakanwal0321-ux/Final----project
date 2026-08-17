@@ -1,0 +1,4057 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #fff7e8;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+
+    height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background-color: #260b0b;
+}
+
+
+/* LOGO */
+
+.logo {
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+   display: flex;
+}
+
+
+.logo small {
+
+    display: block;
+
+    color: #f5b52e;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* MENU */
+
+.menu {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+.menu a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+
+
+.menu a:hover {
+
+    color: #f5b52e;
+
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    height: 620px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    background-color: #4a0d0d;
+
+}
+
+
+/* LEFT SIDE */
+
+.hero-content {
+
+    width: 45%;
+
+    padding-left: 8%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.hero-small-text {
+
+    color: #f5b52e;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero h1 {
+
+    color: white;
+
+    font-size: 60px;
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 span {
+
+    color: #f5b52e;
+
+}
+
+
+.hero-description {
+
+    color: white;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    width: 400px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ORDER BUTTON */
+
+.hero-button {
+
+    width: 130px;
+
+    background-color: #f5b52e;
+
+    color: #4a0d0d;
+
+    border: none;
+
+    padding: 13px 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+/* ================= FOOD IMAGE ================= */
+
+.hero-image {
+
+    width: 55%;
+
+    height: 620px;
+
+    background-image: url("./38bb963a9c08bc4b4894b98b9d5ff32c.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+.order-button {
+
+    width: 200px;
+
+    padding: 12px 0;
+
+    color: #260b0b;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+
+}
+
+
+.order-button:hover {
+    color: #260b0b;
+
+}
+/* ================= TASTE AROUND ASIA ================= */
+
+.taste-asia {
+
+    padding: 70px 7%;
+
+    background-color: #fff8e9;
+
+}
+
+
+/* HEADING */
+
+.taste-heading {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+
+.taste-heading p:first-child {
+
+    color: #d98218;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.taste-heading h2 {
+
+    color: #3b1010;
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.taste-heading p:last-child {
+
+    color: #666;
+
+    font-size: 14px;
+
+}
+
+
+
+/* COUNTRY CARDS */
+
+.country-cards {
+
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+
+}
+
+
+.country-card {
+
+    width: 24%;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+
+}
+
+
+.country-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+
+}
+
+
+
+/* COUNTRY IMAGE */
+
+.country-image {
+
+    height: 190px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+/* Add your country food images here */
+
+.bangladesh {
+
+    background-image: url("./44c6a54cb37885d1298ac907030977a5.jpg");
+
+}
+
+
+.pakistan {
+
+    background-image: url("./biryani.jpg");
+
+}
+
+
+.india {
+
+    background-image: url("./Indian\ food.jpg");
+
+}
+
+
+.china {
+
+    background-image: url("./chinese.jpg");
+
+}
+.explore-button {
+
+    display: inline-block;
+
+    background-color: #d98218;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 9px 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    border-radius: 4px;
+
+}
+
+
+.explore-button:hover {
+
+    background-color: #3b1010;
+
+}
+
+
+
+/* CARD CONTENT */
+
+.country-content {
+
+    padding: 18px;
+
+}
+
+
+.country-content h3 {
+
+    color: #3b1010;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.country-content p {
+
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+
+}
+
+
+.country-content button {
+
+    background-color: #d98218;
+
+    color: white;
+
+    border: none;
+
+    padding: 9px 18px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+
+}
+
+
+.country-content button:hover {
+
+    background-color: #3b1010;
+
+}
+/* ================= PAKISTAN CUISINE PAGE ================= */
+
+.cuisine-page {
+    background-color: #fff8e9;
+    padding: 60px 5%;
+    min-height: 100vh;
+}
+
+
+/* PAGE HEADING */
+
+.cuisine-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.cuisine-heading p:first-child {
+    color: #d98218;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.cuisine-heading h1 {
+    color: #3b1010;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.cuisine-heading p:last-child {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* FOOD LIST */
+
+.food-list {
+    flex: 1;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+/* FOOD ITEM */
+
+.food-item {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+    
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+}
+
+
+/* FOOD IMAGE */
+
+.food-picture {
+    width: 45%;
+min-height: 230px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* FOOD IMAGES */
+
+.biryani {
+    background-image: url("./biryani.jpg");
+}
+
+.karahi {
+    background-image: url("./karahi.pk.jpg");
+}
+
+.samosa {
+    background-image: url("./samose.pk.jpg");
+}
+
+.naan {
+    background-image: url("./naan.pk.jpg");
+}
+.haleem {
+    background-image: url("./beef\ haleem.jpg");
+}
+
+.tikka {
+    background-image: url("./Tikka.jpg");
+}
+
+.kebab {
+    background-image: url("./kabab.jpg");
+}
+
+.kheer {
+    background-image: url("./kheer.jpg");
+}
+
+
+/* FOOD INFORMATION */
+
+.food-info {
+    width: 55%;
+    padding: 22px;
+}
+
+.food-info h2 {
+    color: #3b1010;
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+
+.food-info p {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.food-info h3 {
+    color: #d98218;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.food-info label {
+    color: #3b1010;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.food-info input {
+    width: 50px;
+    padding: 7px;
+    margin-left: 8px;
+    border: 1px solid #ddd;
+}
+
+
+/* ADD TO ORDER BUTTON */
+
+.food-info button {
+    display: block;
+    width: 100%;
+    margin-top: 29px;
+    padding: 9px;
+
+    background-color: #3b1010;
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.food-info button:hover {
+    background-color: #d98218;
+}
+
+
+
+
+.order-summary h2 {
+
+    color: #3b1010;
+
+    margin-bottom: 20px;
+}
+
+
+#order-list p {
+
+    color: #555;
+
+    padding: 8px;
+
+    border-bottom: 2px solid #eee;
+}
+
+
+#total-price {
+
+    color: #d98218;
+
+    margin-top: 20px;
+}
+/* ================= PICKUP TIME ================= */
+
+.pickup-section {
+
+    margin-top: 30px;
+    
+    text-align: center;
+
+}
+
+
+.pickup-section label {
+
+    display: block;
+
+    color: rgb(124, 11, 11);
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+.pickup-section select {
+
+    width: 220px;
+
+    padding: 12px;
+
+    border: 1px solid brown;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    background-color: lightgrey;
+
+    color: #3b1010;
+
+}
+
+
+/* ================= PLACE ORDER ================= */
+
+.place-order-button {
+
+    display: block;
+
+    width: 220px;
+
+    margin: 25px auto 0;
+
+    padding: 13px;
+
+    background-color: #f5b52e;
+
+    color: #3b1010;
+
+    border: 1px grey;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.place-order-button:hover {
+
+    background-color: brown;
+
+    color: #3b1010;
+
+}
+
+
+
+.bd-biryani {
+    background-image: url("./chicken\ biryani.jpg");
+}
+
+.tehari {
+    background-image: url("./chicken\ burger.jpg");
+}
+
+.fuchka {
+    background-image: url("./Fuchka.jpg");
+}
+
+.chicken-bhuna {
+    background-image: url("./chicken\ bhuna.jpg");
+}
+
+.chicken-burger {
+    background-image: url("./chicken\ shwarma.jpg");
+}
+
+.chicken-pizza {
+    background-image: url("./pizza.jpg");
+}
+
+.chicken-shawarma {
+    background-image: url("./Panta\ Bhat.jpg");
+}
+
+.french-fries {
+    background-image: url("./fries.jpg");
+}
+.masala-dosa {
+    background-image: url("./Masala\ Dosa.jpg");
+}
+
+.pav-bhaji {
+    background-image: url("./Pav\ Bhaji.jpg");
+}
+
+.idli-sambar {
+    background-image: url("./Idli\ Sambar.jpg");
+}
+
+.hakka-noodles {
+    background-image: url("./Hakka\ Noodles.jpg");
+}
+
+.vada-pav {
+    background-image: url("./Vada\ Pav.jpg");
+}
+
+.aloo-paratha {
+    background-image: url("./Aloo\ Paratha.jpg");
+}
+
+.pani-puri {
+    background-image: url("./Pani\ Puri.jpg");
+}
+
+.rasmalai {
+    background-image: url("./Rasmalai.jpg");
+}
+.chicken-chowmein {
+    background-image: url("./Chicken\ Chow\ Mein.jpg");
+}
+
+.fried-rice {
+    background-image: url("./Yangzhou\ Fried\ Rice.jpg");
+}
+
+.dumplings {
+    background-image: url("./Chicken\ Dumplings.jpg");
+}
+
+.spring-rolls {
+    background-image: url("./Spring\ Rolls.jpg");
+}
+
+.kung-pao {
+    background-image: url("./Kung\ Pao\ Chicken.jpg");
+}
+
+.sweet-sour {
+    background-image: url("./Sweet\ &\ Sour\ Chicken.jpg");
+}
+
+.mapo-tofu {
+    background-image: url("./Mapo\ Tofu.jpg");
+}
+
+.egg-tarts {
+    background-image: url("./Egg\ Tarts.jpg");
+}
+/* =====================================
+   HOW IT WORKS PAGE
+===================================== */
+
+
+/* INTRODUCTION */
+
+.how-intro {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+.how-intro p:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.how-intro h1 {
+    font-size: 50px;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.how-intro p:last-child {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+
+
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p:first-child {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.section-heading p:last-child {
+    font-size: 16px;
+}
+
+
+
+/* PAIN POINTS */
+
+.pain-points {
+    padding: 70px 8%;
+}
+
+.problem-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.problem-card {
+    width: 220px;
+    min-height: 190px;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.problem-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
+}
+
+.problem-card h3 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.problem-card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+
+/* SOLUTION */
+
+.solution {
+    text-align: center;
+
+    padding: 100px 20%;
+
+    background:
+        linear-gradient(
+            rgba(35, 25, 18, 0.72),
+            rgba(35, 25, 18, 0.72)
+        ),
+        url("./6bf0c894-c246-43d0-8085-9ccfc8b726fa.png");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.solution > p:first-child {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.solution h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.solution p:last-child {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.solution > p:first-child {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.solution h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.solution p:last-child {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+
+/* HOW IT WORKS STEPS */
+
+.how-steps {
+    padding: 80px 8%;
+}
+
+.step-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.step-card {
+    width: 220px;
+    min-height: 220px;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+
+    border: none;
+}
+
+
+/* CARD 1 */
+
+.step-card:nth-child(1) {
+    background-color: #fff0d9;
+}
+
+
+/* CARD 2 */
+
+.step-card:nth-child(2) {
+    background-color: #ffe3df;
+}
+
+
+/* CARD 3 */
+
+.step-card:nth-child(3) {
+    background-color: #e4f1e8;
+}
+
+
+/* CARD 4 */
+
+.step-card:nth-child(4) {
+    background-color: #e5e9f7;
+}
+
+
+/* HOVER EFFECT */
+
+.step-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+.step-card h3 {
+    font-size: 32px;
+
+    margin: 0 0 15px;
+}
+
+
+.step-card h2 {
+    font-size: 19px;
+
+    margin-bottom: 15px;
+}
+
+
+.step-card p {
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+
+
+
+/* IMPACT */
+
+.impact {
+    padding: 80px 8%;
+    
+}
+
+.impact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.impact-card {
+    width: 260px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.impact-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.impact-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+/* FINAL MESSAGE */
+
+.final-message {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.final-message h2 {
+    font-size: 42px;
+    line-height: 1.3;
+}
+/* =====================================
+   FOOD BACKGROUND
+===================================== */
+
+body {
+    background-image:
+        linear-gradient(
+            rgba(255, 250, 242, 0.88),
+            rgba(255, 250, 242, 0.88)
+        ),
+        url("./542b403d-3ecd-4db2-b3a6-157062b6f7f7.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.impact {
+    padding: 90px 8%;
+
+    background:
+        linear-gradient(
+            rgba(255, 250, 242, 0.90),
+            rgba(255, 250, 242, 0.90)
+        ),
+        url("./food-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.impact-card {
+    width: 260px;
+
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.impact-card:hover {
+    transform: translateY(-8px);
+}
+.section-divider {
+    width: 70%;
+    height: 6px;
+
+    margin: 10px auto 60px;
+
+    background-color: #e6b84c;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 3px 8px rgba(230, 184, 76, 0.5),
+        0 0 15px rgba(230, 184, 76, 0.2);
+}
+/* =====================================
+   ORDER PAGE
+===================================== */
+
+
+/* ORDER HERO */
+
+.order-hero {
+    text-align: center;
+
+    padding: 75px 20px 65px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("./food-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.order-hero p:first-child {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+.order-hero h1 {
+    font-size: 52px;
+
+    margin: 10px 0;
+}
+
+.order-hero p:last-child {
+    font-size: 16px;
+
+    margin-top: 15px;
+}
+
+
+
+/* MAIN ORDER AREA */
+
+.order-container {
+    width: 82%;
+
+    margin: 65px auto;
+
+    display: flex;
+
+    gap: 35px;
+
+    align-items: stretch;
+}
+
+
+
+/* =====================================
+   RECEIPT
+===================================== */
+
+.order-receipt {
+    width: 55%;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border-radius: 22px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+
+    box-sizing: border-box;
+}
+
+
+.receipt-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.receipt-top > span {
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #fff0d9;
+
+    font-size: 25px;
+}
+
+
+.receipt-top h2 {
+    margin: 0;
+
+    font-size: 25px;
+}
+
+
+.receipt-top p {
+    margin: 5px 0 0;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+
+/* RECEIPT LINE */
+
+.receipt-line {
+    height: 2px;
+
+    margin: 25px 0;
+
+    background-color: #eee;
+}
+
+
+
+/* ORDER ITEMS */
+
+#order-list {
+    min-height: 100px;
+}
+
+
+#order-list div {
+    padding: 12px 0;
+
+    font-size: 15px;
+}
+
+
+
+/* TOTAL */
+
+.receipt-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 5px;
+}
+
+
+.receipt-total span {
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+
+.receipt-total strong {
+    font-size: 28px;
+
+    color: #c99727;
+}
+
+
+
+/* =====================================
+   PICKUP CARD
+===================================== */
+
+.pickup-card {
+    width: 45%;
+
+    padding: 38px;
+
+    box-sizing: border-box;
+
+    border-radius: 22px;
+
+    background-color: #fff0d9;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+.pickup-small {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin: 0 0 12px;
+}
+
+
+.pickup-card h2 {
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    margin: 0 0 15px;
+}
+
+
+.pickup-description {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+}
+
+
+
+/* =========================================
+   ORDER PAGE
+========================================= */
+
+.order-hero {
+
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(45, 5, 8, 0.88),
+            rgba(45, 5, 8, 0.92)
+        ),
+        url("./cine.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.order-hero-content {
+
+    color: white;
+
+}
+
+
+.order-hero-content p {
+
+    color: #e6b84c;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.order-hero-content h1 {
+
+    font-size: 52px;
+
+    margin: 0 0 12px;
+
+    font-weight: 800;
+
+}
+
+
+.order-hero-content span {
+
+    font-size: 16px;
+
+    color: #eeeeee;
+
+}
+
+
+/* =========================================
+   ORDER BACKGROUND
+========================================= */
+
+.order-section {
+    background: #fff8eb;
+
+    padding: 65px 6% 80px;
+
+    min-height: 500px;
+}
+
+
+/* =========================================
+   TWO COLUMN LAYOUT
+========================================= */
+
+/* MAIN TWO-COLUMN AREA */
+
+.order-container {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 28px;
+
+    align-items: start;
+}
+
+
+/* ==========================================
+   YOUR ORDER CARD
+========================================== */
+
+.order-card {
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow: 0 8px 25px rgba(59, 16, 16, 0.08);
+
+    border: 1px solid #eee3d0;
+
+    min-height: 330px;
+
+    box-sizing: border-box;
+}
+
+
+
+.order-card-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.cart-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #fff1d5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+}
+
+
+.order-card-header h2 {
+
+    margin: 0;
+
+    color: #2d0508;
+
+    font-size: 25px;
+
+}
+
+
+.order-card-header p {
+
+    margin: 4px 0 0;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.order-line {
+
+    height: 1px;
+
+    background: #eeeeee;
+
+    margin: 25px 0;
+
+}
+
+
+/* =========================================
+   EMPTY ORDER
+========================================= */
+
+.empty-order {
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+}
+
+
+.empty-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.empty-order h3 {
+
+    color: #2d0508;
+
+    margin-bottom: 8px;
+
+}
+
+
+.empty-order p {
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    max-width: 350px;
+
+    margin: auto;
+
+}
+
+
+.empty-order a {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 11px 20px;
+
+    background: #2d0508;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.empty-order a:hover {
+
+    background: #e6b84c;
+
+    color: #2d0508;
+
+}
+
+
+/* =========================================
+   TOTAL
+========================================= */
+
+.order-total-box {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 2px solid #eeeeee;
+
+    margin-top: 15px;
+
+    padding-top: 20px;
+
+}
+
+
+.order-total-box span {
+
+    color: #555;
+
+    font-size: 15px;
+
+}
+
+
+.order-total-box strong {
+
+    color: #2d0508;
+
+    font-size: 25px;
+
+}
+
+
+/* =========================================
+   CHECKOUT CARD
+========================================= */
+
+.checkout-card {
+
+    background: #2d0508;
+
+    color: white;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 12px 35px rgba(45, 5, 8, 0.20);
+
+}
+
+
+.checkout-label {
+
+    color: #e6b84c;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin: 0 0 10px;
+
+}
+
+
+.checkout-card h2 {
+
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    margin: 0 0 12px;
+
+}
+
+
+.checkout-description {
+
+    color: #d5d5d5;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+
+.form-group input,
+.form-group select {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 15px;
+
+    border: 1px solid #5a3033;
+
+    border-radius: 8px;
+
+    background: #421518;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 14px;
+
+}
+
+
+.form-group input::placeholder {
+
+    color: #bdaeb0;
+
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+
+    border-color: #e6b84c;
+
+    box-shadow:
+        0 0 0 2px rgba(230, 184, 76, 0.15);
+
+}
+
+
+.form-group select option {
+
+    color: black;
+
+}
+
+
+/* =========================================
+   PLACE ORDER BUTTON
+========================================= */
+
+.place-order-button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #e6b84c;
+
+    color: #2d0508;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.place-order-button span {
+
+    margin-left: 10px;
+
+    font-size: 18px;
+
+}
+
+
+.place-order-button:hover {
+
+    background: white;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(230, 184, 76, 0.20);
+
+}
+
+
+/* =========================================
+   ORDER MESSAGE
+========================================= */
+
+.order-message {
+
+    text-align: center;
+
+    margin-top: 18px;
+
+    color: #e6b84c;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.order-note {
+
+    margin-top: 25px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #543033;
+
+    color: #bdaeb0;
+
+    font-size: 11px;
+
+    text-align: center;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .order-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .order-hero {
+
+        min-height: 250px;
+
+    }
+
+
+    .order-hero-content h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .checkout-card h2 {
+
+        font-size: 25px;
+
+    }
+
+}
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 800px) {
+
+    .order-container {
+        width: 90%;
+
+        flex-direction: column;
+    }
+
+
+    .order-receipt,
+    .pickup-card {
+        width: 100%;
+    }
+
+
+    .order-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .pickup-card h2 {
+        font-size: 27px;
+    }
+
+
+    .order-bottom h2 {
+        font-size: 30px;
+    }
+
+}
+/* =====================================
+   DARK FOOTER
+===================================== */
+
+.footer {
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("./cine.png");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    padding: 70px 8% 25px;
+
+    margin-top: 70px;
+}
+
+
+/* FOOTER MAIN */
+
+.footer-main {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* BRAND */
+
+.footer-brand {
+    width: 30%;
+}
+
+
+.footer-brand h2 {
+    font-size: 32px;
+
+    margin: 0;
+
+    color: #e6b84c;
+}
+
+
+.footer-tagline {
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #e6b84c;
+
+    margin: 5px 0 20px;
+}
+
+
+.footer-brand p:last-child {
+    color: #bdbdbd;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* FOOTER LINKS */
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 17px;
+
+    margin-top: 0;
+
+    margin-bottom: 12px;
+
+    color: white;
+}
+
+
+.footer-links a {
+    text-decoration: none;
+
+    color: #bdbdbd;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.footer-links a:hover {
+    color: #e6b84c;
+
+    transform: translateX(4px);
+}
+
+
+/* CONTACT / MESSAGE */
+
+.footer-contact {
+    width: 22%;
+}
+
+
+.footer-contact p {
+    color: #bdbdbd;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* FOOTER BUTTON */
+
+.footer-button {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 12px 20px;
+
+    background-color: #e6b84c;
+
+    color: #171717;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.footer-button:hover {
+    background-color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 15px rgba(230, 184, 76, 0.25);
+}
+
+
+/* LINE */
+
+.footer-line {
+    height: 2px;
+
+    background-color: #333;
+
+    margin: 45px auto 20px;
+
+    max-width: 1200px;
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 800px) {
+
+    .footer-main {
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+
+    .footer-brand,
+    .footer-contact {
+        width: 100%;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+/* =====================================
+   NEW ORDER PAGE
+===================================== */
+
+.order-hero {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(45, 5, 8, 0.88),
+            rgba(45, 5, 8, 0.92)
+        ),
+        url("./cine.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.order-hero-content {
+    color: white;
+}
+
+
+.order-hero-content p {
+    color: #f5b52e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+
+.order-hero-content h1 {
+    font-size: 52px;
+    margin: 0 0 12px;
+}
+
+
+.order-hero-content span {
+    font-size: 16px;
+    color: #eeeeee;
+}
+
+
+/* ORDER AREA */
+
+.order-section {
+    background-color: #fff8e9;
+    padding: 60px 7%;
+}
+
+
+.order-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+/* LEFT CARD */
+
+.order-card {
+    background-color: white;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.10);
+}
+
+
+.order-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.cart-icon {
+    width: 55px;
+    height: 55px;
+
+    background-color: #fff1d5;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+
+.order-card-header h2 {
+    color: #3b1010;
+    margin: 0;
+}
+
+
+.order-card-header p {
+    color: #777;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+.order-line {
+    height: 1px;
+    background-color: #eeeeee;
+    margin: 25px 0;
+}
+
+
+/* EMPTY ORDER */
+
+.empty-order {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+.empty-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+.empty-order h3 {
+    color: #3b1010;
+    margin-bottom: 8px;
+}
+
+
+.empty-order p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+.empty-order a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 11px 20px;
+
+    background-color: #3b1010;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.empty-order a:hover {
+    background-color: #f5b52e;
+    color: #3b1010;
+}
+
+
+/* TOTAL */
+
+.order-total-box {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 2px solid #eeeeee;
+
+    margin-top: 15px;
+
+    padding-top: 20px;
+}
+
+
+.order-total-box span {
+    color: #555;
+}
+
+
+.order-total-box strong {
+    color: #d98218;
+    font-size: 24px;
+}
+
+
+/* RIGHT CARD */
+
+.checkout-card {
+    background-color: #3b1010;
+
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.18);
+}
+
+
+.checkout-label {
+    color: #f5b52e;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+.checkout-card h2 {
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+}
+
+
+.checkout-description {
+    color: #ddd;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.form-group input,
+.form-group select {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px;
+
+    border: 1px solid #704044;
+
+    border-radius: 7px;
+
+    background-color: #4a181b;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+.form-group input::placeholder {
+    color: #c5aaac;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+
+    outline: none;
+
+    border-color: #f5b52e;
+}
+
+
+/* BUTTON */
+
+.place-order-button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 10px;
+
+    background-color: #f5b52e;
+
+    color: #3b1010;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.place-order-button:hover {
+
+    background-color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* MESSAGE */
+
+#order-message {
+    margin-top: 15px;
+
+    padding: 12px 14px;
+
+    background: #fff4d6;
+
+    border-left: 4px solid #e6b84c;
+
+    border-radius: 5px;
+
+    color: #5a4141;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* Order Confirmed */
+
+#order-message h3 {
+    margin: 0 0 6px;
+
+    color: #e6b84c;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+/* Order number */
+
+#order-message strong {
+    color: #3b1010;
+
+    font-weight: 800;
+}
+
+
+/* Pickup time */
+
+#order-message p {
+    margin: 4px 0;
+
+    color: #5a4141;
+
+    font-size: 12px;
+}
+
+
+/* Make the pickup time yellow */
+
+#order-message p strong {
+    color: #e6b84c;
+
+    font-weight: 700;
+}
+
+/* NOTE */
+
+.order-note {
+
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #603337;
+
+    color: #c9b5b6;
+
+    text-align: center;
+
+    font-size: 11px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .order-container {
+        grid-template-columns: 1fr;
+    }
+
+    .order-hero-content h1 {
+        font-size: 40px;
+    }
+
+}
+/* TEST ORDER PAGE */
+
+.order-section {
+    background-color: #fff8e9;
+    padding: 70px 7%;
+}
+
+.order-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.order-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.checkout-card {
+    background: #3b1010;
+    color: white;
+
+    padding: 35px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.20);
+}
+/* =================================
+   CUISINE ORDER RECEIPT - RIGHT SIDE
+================================= */
+
+.cuisine-page {
+    padding-right: 350px;
+}
+
+.order-summary {
+    position: sticky;
+    top: 25px;
+
+    width: 390px;
+    min-width: 390px;
+
+    background-color: #3b1010;
+    color: white;
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+}
+
+
+/* Receipt heading */
+
+.order-summary h2 {
+    color: #f5b52e;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* Food items inside receipt */
+
+#order-list {
+    max-height: 280px;
+    overflow-y: auto;
+    margin-top: 15px;
+    padding-right: 5px;
+}
+
+#order-list p {
+    color: white;
+    border-bottom: 1px solid #603337;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Total */
+
+#total-price {
+    color: #f5b52e;
+
+    border-top: 2px solid #603337;
+
+    padding-top: 15px;
+
+    margin-top: 15px;
+}
+
+
+/* Pickup section */
+
+.pickup-section {
+    margin-top: 20px;
+}
+
+.pickup-section label {
+    display: block;
+
+    color: white;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+.pickup-section select {
+    width: 100%;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border-radius: 7px;
+
+    border: 1px solid #704044;
+
+    background-color: #4a181b;
+
+    color: white;
+}
+
+
+/* Place order */
+
+.place-order-button {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #f5b52e;
+
+    color: #3b1010;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.place-order-button:hover {
+    background-color: white;
+}
+
+/* Space between different country sections */
+.country-title {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.food-list {
+    margin-bottom: 70px;
+}
+.chicken-chowmein {
+    background-image: url("./Chicken\ Chow\ Mein.jpg");
+}
+
+.fried-rice {
+    background-image: url("./Yangzhou\ Fried\ Rice.jpg");
+}
+
+.dumplings {
+    background-image: url("./Chicken\ Dumplings.jpg");
+}
+
+.spring-roll {
+    background-image: url("./spring\ roll.jpg");
+}
+.chole-bhature {
+    background-image: url("./Chote\ bhature.jpg");
+}
+
+.paneer-tikka {
+    background-image: url("./paneer\ tikka.jpg");
+}
+
+.gulab-jamun {
+    background-image: url("./Gulab\ jamun.jpg");
+}
+.chotpoti {
+    background-image: url("./Chotpoti..jpg");
+}
+
+.shingara {
+    background-image: url("./shingara.jpg");
+}
+
+
+
+.country-title h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #4b1010;
+    margin: 0 0 12px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.country-title p {
+    font-size: 17px;
+    color: #666;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+.menu-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+/* =================================
+   CUISINE MENU + ORDER LAYOUT
+================================= */
+
+.cuisine-page {
+    padding-right: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* FOOD LIST */
+
+.food-list {
+    flex: 1;
+    width: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* ORDER BOX */
+
+.order-summary {
+    position: sticky;
+    top: 25px;
+
+    width: 390px;
+    min-width: 390px;
+
+    background-color: #3b1010;
+    color: white;
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+}
+
+
+/* ORDER ITEMS */
+
+#order-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+#order-list p {
+    color: white;
+
+    padding: 10px 5px;
+
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid #603337;
+}
+
+
+/* TOTAL */
+
+#total-price {
+    color: #f5b52e;
+
+    border-top: 2px solid #603337;
+
+    padding-top: 15px;
+
+    margin-top: 15px;
+}
+
+
+/* PICKUP */
+
+.pickup-section {
+    margin-top: 20px;
+}
+
+.pickup-section label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.pickup-section select {
+    width: 100%;
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border-radius: 7px;
+    border: 1px solid #704044;
+
+    background-color: #4a181b;
+    color: white;
+}
+
+
+/* PLACE ORDER */
+
+.place-order-button {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #f5b52e;
+
+    color: #3b1010;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.place-order-button:hover {
+    background-color: white;
+}
+/* ==============================
+   COUNTRY SEPARATION
+================================ */
+
+.country-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin: 30px 0 15px;
+}
+
+.divider-line {
+    width: 100px;
+    height: 1px;
+
+    background-color: #d99a25;
+}
+
+.divider-icon {
+    color: #d99a25;
+    font-size: 12px;
+}
+
+
+/* COUNTRY TITLE */
+
+.country-heading {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.country-flag {
+    font-size: 38px;
+
+    margin-bottom: 2px;
+}
+
+.country-heading h2 {
+    margin: 0;
+
+    color: #4b1010;
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.country-heading p {
+    margin-top: 2px;
+
+    color: #666;
+
+    font-size: 15px;
+}
+.order-message {
+    display: none;
+}
+
+.pickup-section input[type="time"] {
+    width: 100%;
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border-radius: 7px;
+
+    border: 1px solid #704044;
+
+    background-color: #4a181b;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.pickup-section input[type="time"]:focus {
+    outline: none;
+    border-color: #f5b52e;
+}
+.current-time{
+    text-align: center;
+}
+/* ================= CURRENT TIME ================= */
+
+.current-time {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.current-time span {
+    display: block;
+    color: #3b1010;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.current-time strong {
+    display: block;
+    color: #3b1010;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* =========================================
+   FINAL PAKISTAN MENU + ORDER LAYOUT
+========================================= */
+
+.cuisine-page {
+    background-color: #fff8e9;
+    padding: 60px 5%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+/* PAGE HEADING */
+
+.cuisine-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* =========================================
+   MENU + ORDER TWO COLUMN LAYOUT
+========================================= */
+
+.menu-layout {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   LEFT SIDE - FOOD MENU
+========================================= */
+
+.food-list {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   FOOD CARD
+========================================= */
+
+.food-item {
+    display: flex;
+
+    width: 100%;
+
+    min-height: 230px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+
+.food-item:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================================
+   FOOD IMAGE
+========================================= */
+
+.food-picture {
+    width: 45%;
+    min-height: 230px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   FOOD INFORMATION
+========================================= */
+
+.food-info {
+    width: 55%;
+
+    padding: 20px;
+
+    text-align: left;
+}
+
+
+.food-info h2 {
+    color: #3b1010;
+
+    font-size: 19px;
+
+    margin-bottom: 7px;
+}
+
+
+.food-info p {
+    color: #666;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+}
+
+
+.food-info h3 {
+    color: #d98218;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+.food-info label {
+    color: #3b1010;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.food-info input {
+    width: 50px;
+
+    padding: 7px;
+
+    margin-left: 8px;
+
+    border: 1px solid #ddd;
+}
+
+
+/* ADD TO ORDER */
+
+.food-info button {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 9px;
+
+    background-color: #3b1010;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.food-info button:hover {
+    background-color: #d98218;
+}
+
+
+/* =========================================
+   RIGHT SIDE - YOUR ORDER
+========================================= */
+
+.order-summary {
+    width: 360px;
+
+    background-color: #3b1010;
+
+    color: white;
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+
+    /* VERY IMPORTANT */
+
+    position: sticky;
+
+    top: 20px;
+
+    align-self: start;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   TIMER
+========================================= */
+
+.running-timer {
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #603337;
+}
+
+
+.running-timer span {
+    display: block;
+
+    color: white;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+.running-timer strong {
+    display: block;
+
+    color: #f5b52e;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   CURRENT TIME
+========================================= */
+
+.current-time {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+.current-time span {
+    display: block;
+
+    color: #dddddd;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+.current-time strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 21px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   YOUR ORDER HEADING
+========================================= */
+
+.order-summary h2 {
+    color: #f5b52e;
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    text-align: left;
+}
+
+
+/* =========================================
+   ORDER LIST
+========================================= */
+
+#order-list {
+    max-height: 280px;
+
+    overflow-y: auto;
+
+    margin-bottom: 15px;
+
+    padding-right: 5px;
+}
+
+
+#order-list p {
+    color: white;
+
+    padding: 10px 5px;
+
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid #603337;
+
+    text-align: left;
+}
+
+
+/* =========================================
+   TOTAL
+========================================= */
+
+#total-price {
+    color: #f5b52e;
+
+    border-top: 2px solid #603337;
+
+    padding-top: 15px;
+
+    margin-top: 15px;
+
+    text-align: left;
+}
+
+
+/* =========================================
+   PICKUP TIME
+========================================= */
+
+.pickup-section {
+    margin-top: 20px;
+
+    text-align: left;
+}
+
+
+.pickup-section label {
+    display: block;
+
+    color: white;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+
+.pickup-section select,
+.pickup-section input[type="time"] {
+    width: 100%;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border-radius: 7px;
+
+    border: 1px solid #704044;
+
+    background-color: #4a181b;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   PLACE ORDER BUTTON
+========================================= */
+
+.place-order-button {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #f5b52e;
+
+    color: #3b1010;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.place-order-button:hover {
+    background-color: white;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .menu-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        position: static;
+
+        width: 100%;
+    }
+
+    .food-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .food-item {
+        flex-direction: column;
+    }
+
+    .food-picture {
+        width: 100%;
+        height: 200px;
+    }
+
+    .food-info {
+        width: 100%;
+    }
+
+}
+/* =========================================
+   FINAL PAKISTAN MENU LAYOUT
+========================================= */
+
+.cuisine-page {
+    background-color: #fff8e9;
+    padding: 60px 5%;
+    min-height: 100vh;
+}
+/* =========================================
+   FIX FOOTER ON CUISINE PAGES
+========================================= */
+
+.cuisine-page .footer {
+    width: calc(100% + 10%);
+
+    margin-left: -5%;
+    margin-right: -5%;
+
+    box-sizing: border-box;
+}
+
+
+/* MENU + ORDER */
+
+.menu-layout {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 1fr) 360px !important;
+
+    gap: 30px;
+
+    align-items: start !important;
+}
+
+
+/* FOOD MENU */
+
+.food-list {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    margin: 0;
+}
+
+
+/* ORDER BOX */
+
+.order-summary {
+    width: 360px;
+
+    position: sticky !important;
+
+    top: 20px !important;
+
+    align-self: start !important;
+
+    margin: 0 !important;
+
+    background-color: #3b1010;
+
+    color: white;
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+    box-sizing: border-box;
+
+    z-index: 10;
+}
+
+
+/* TIMER */
+
+.running-timer {
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #603337;
+}
+
+.running-timer span {
+    display: block;
+
+    color: white;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.running-timer strong {
+    display: block;
+
+    color: #f5b52e;
+
+    font-size: 24px;
+}
+
+
+/* CURRENT TIME */
+
+.current-time {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.current-time span {
+    display: block;
+
+    color: #ddd;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.current-time strong {
+    display: block;
+
+    color: white;
+
+    font-size: 21px;
+}
+
+
+/* ORDER HEADING */
+
+.order-summary h2 {
+    color: #f5b52e;
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    text-align: left;
+}
+
+
+/* ORDER LIST */
+
+#order-list {
+    max-height: 280px;
+
+    overflow-y: auto;
+
+    margin-bottom: 15px;
+}
+
+#order-list p {
+    color: white;
+
+    padding: 10px 5px;
+
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid #603337;
+}
+
+
+/* TOTAL */
+
+#total-price {
+    color: #f5b52e;
+
+    border-top: 2px solid #603337;
+
+    padding-top: 15px;
+
+    margin-top: 15px;
+}
+
+
+/* PICKUP */
+
+.pickup-section {
+    margin-top: 20px;
+
+    text-align: left;
+}
+
+.pickup-section label {
+    display: block;
+
+    color: white;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+.pickup-section select {
+    width: 100%;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border-radius: 7px;
+
+    border: 1px solid #704044;
+
+    background-color: #4a181b;
+
+    color: white;
+}
+
+
+/* PLACE ORDER */
+
+.place-order-button {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #f5b52e;
+
+    color: #3b1010;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.place-order-button:hover {
+    background-color: white;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .menu-layout {
+        grid-template-columns: 1fr !important;
+    }
+
+    .order-summary {
+        position: static !important;
+
+        width: 100%;
+    }
+
+    .food-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+.order-message{
+    display: none;
+}
+/* =================================
+   ORDER BOX TIMER
+================================= */
+
+.running-timer {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.running-timer span {
+    display: block;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.running-timer strong {
+    display: block;
+    color: #f5b52e;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* =================================
+   CURRENT TIME
+================================= */
+
+.current-time {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.current-time span {
+    display: block;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.current-time strong {
+    display: block;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* =================================
+   ORDER HEADING
+================================= */
+
+.order-summary h2 {
+    color: #f5b52e;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* =================================
+   PICKUP TIME
+================================= */
+
+.pickup-section {
+    margin-top: 20px;
+}
+
+.pickup-section label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.pickup-section select {
+    width: 100%;
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border-radius: 7px;
+
+    border: 1px solid #704044;
+
+    background-color: #4a181b;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+/* =================================
+   PLACE ORDER
+================================= */
+
+.place-order-button {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #f5b52e;
+
+    color: #3b1010;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.place-order-button:hover {
+    background-color: white;
+}

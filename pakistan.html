@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pakistan Cuisine - CineTella SmartBite</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            🍽️
+        </div>
+
+        <div class="logo-text">
+            <span>CineTella</span>
+            <small>SMARTBITE</small>
+        </div>
+
+    </div>
+
+
+    <div class="menu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#taste">
+            Menu
+        </a>
+
+        <a href="index.html#taste">
+            Cuisines
+        </a>
+
+        <a href="how-it-works.html">
+            How It Works
+        </a>
+
+        <a href="order.html" class="header-order">
+            Order Now →
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= PAKISTAN CUISINE ================= -->
+
+<section class="cuisine-page">
+
+    <div class="cuisine-heading">
+
+        <p>WELCOME TO</p>
+
+        <h1>Pakistan Cuisine</h1>
+
+        <p>
+            Enjoy traditional Pakistani flavors
+            prepared fresh at CineTella.
+        </p>
+
+    </div>
+
+
+    <div class="menu-layout">
+
+
+        <div class="food-list">
+
+
+            <!-- ================= FOOD 1 ================= -->
+
+            <div class="food-item">
+
+                <div class="food-picture biryani"></div>
+
+                <div class="food-info">
+
+                    <h2>Chicken Biryani</h2>
+
+                    <p>
+                        Fragrant basmati rice cooked
+                        with tender chicken and spices.
+                    </p>
+
+                    <h3>৳180</h3>
+
+                    <label>Quantity:</label>
+
+                    <input
+                        type="number"
+                        id="biryani-quantity"
+                        value="1"
+                        min="1"
+                    >
+
+                    <button
+                        onclick="addOrder('Chicken Biryani', 180, document.getElementById('biryani-quantity').value)"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FOOD 2 ================= -->
+
+            <div class="food-item">
+
+                <div class="food-picture karahi"></div>
+
+                <div class="food-info">
+
+                    <h2>Chicken Karahi</h2>
+
+                    <p>
+                        Tender chicken cooked with
+                        tomatoes, herbs and spices.
+                    </p>
+
+                    <h3>৳220</h3>
+
+                    <label>Quantity:</label>
+
+                    <input
+                        type="number"
+                        id="karahi-quantity"
+                        value="1"
+                        min="1"
+                    >
+
+                    <button
+                        onclick="addOrder('Chicken Karahi', 220, document.getElementById('karahi-quantity').value)"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FOOD 3 ================= -->
+
+            <div class="food-item">
+
+                <div class="food-picture samosa"></div>
+
+                <div class="food-info">
+
+                    <h2>Samosa</h2>
+
+                    <p>
+                        Crispy pastry filled with
+                        delicious spiced potatoes.
+                    </p>
+
+                    <h3>৳60</h3>
+
+                    <label>Quantity:</label>
+
+                    <input
+                        type="number"
+                        id="samosa-quantity"
+                        value="1"
+                        min="1"
+                    >
+
+                    <button
+                        onclick="addOrder('Samosa', 60, document.getElementById('samosa-quantity').value)"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FOOD 4 ================= -->
+
+            <div class="food-item">
+
+                <div class="food-picture naan"></div>
+
+                <div class="food-info">
+
+                    <h2>Garlic Naan</h2>
+
+                    <p>
+                        Soft naan topped with garlic
+                        and fresh herbs.
+                    </p>
+
+                    <h3>৳80</h3>
+
+                    <label>Quantity:</label>
+
+                    <input
+                        type="number"
+                        id="naan-quantity"
+                        value="1"
+                        min="1"
+                    >
+
+                    <button
+                        onclick="addOrder('Garlic Naan', 80, document.getElementById('naan-quantity').value)"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FOOD 5 ================= -->
+
+            <div class="food-item">
+
+                <div class="food-picture haleem"></div>
+
+                <div class="food-info">
+
+                    <h2>Beef Haleem</h2>
+
+                    <p>
+                        Slow-cooked beef, lentils and spices
+                        served with fresh herbs.
+                    </p>
+
+                    <h3>৳200</h3>
+
+                    <label>Quantity:</label>
+
+                    <input
+                        type="number"
+                        id="haleem-quantity"
+                        value="1"
+                        min="1"
+                    >
+
+                    <button
+                        onclick="addOrder('Beef Haleem', 200, document.getElementById('haleem-quantity').value)"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FOOD 6 ================= -->
+
+            <div class="food-item">
+
+                <div class="food-picture tikka"></div>
+
+                <div class="food-info">
+
+                    <h2>Chicken Tikka</h2>
+
+                    <p>
+                        Juicy grilled chicken marinated
+                        with traditional Pakistani spices.
+                    </p>
+
+                    <h3>৳220</h3>
+
+                    <label>Quantity:</label>
+
+                    <input
+                        type="number"
+                        id="tikka-quantity"
+                        value="1"
+                        min="1"
+                    >
+
+                    <button
+                        onclick="addOrder('Chicken Tikka', 220, document.getElementById('tikka-quantity').value)"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FOOD 7 ================= -->
+
+            <div class="food-item">
+
+                <div class="food-picture kebab"></div>
+
+                <div class="food-info">
+
+                    <h2>Seekh Kebab</h2>
+
+                    <p>
+                        Grilled minced meat kebabs with
+                        aromatic herbs and spices.
+                    </p>
+
+                    <h3>৳180</h3>
+
+                    <label>Quantity:</label>
+
+                    <input
+                        type="number"
+                        id="kebab-quantity"
+                        value="1"
+                        min="1"
+                    >
+
+                    <button
+                        onclick="addOrder('Seekh Kebab', 180, document.getElementById('kebab-quantity').value)"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FOOD 8 ================= -->
+
+            <div class="food-item">
+
+                <div class="food-picture kheer"></div>
+
+                <div class="food-info">
+
+                    <h2>Traditional Kheer</h2>
+
+                    <p>
+                        Creamy rice pudding prepared with
+                        milk, sugar and cardamom.
+                    </p>
+
+                    <h3>৳100</h3>
+
+                    <label>Quantity:</label>
+
+                    <input
+                        type="number"
+                        id="kheer-quantity"
+                        value="1"
+                        min="1"
+                    >
+
+                    <button
+                        onclick="addOrder('Traditional Kheer', 100, document.getElementById('kheer-quantity').value)"
+                    >
+                        Add to Order
+                    </button>
+
+                </div>
+
+            </div>
+
+
+               </div>
+
+
+        <!-- ================= ORDER SUMMARY ================= -->
+
+        <div class="order-summary">
+
+            <!-- RUNNING TIMER -->
+
+            <div class="running-timer">
+
+                <span>⏱ Order Timer</span>
+
+                <strong id="running-timer">
+                    00:00:00
+                </strong>
+
+            </div>
+
+
+            <!-- CURRENT TIME -->
+
+            <div class="current-time">
+
+                <span>🕒 Current Time</span>
+
+                <strong id="current-time">
+                    00:00:00
+                </strong>
+
+            </div>
+
+
+            <!-- YOUR ORDER -->
+
+            <h2>Your Order</h2>
+
+            <div id="order-list">
+            </div>
+
+
+            <!-- TOTAL -->
+
+            <h3 id="total-price">
+                Total: ৳0
+            </h3>
+
+
+            <!-- PICKUP TIME -->
+
+            <div class="pickup-section">
+
+                <label for="pickup-time">
+                    Select Pickup Time
+                </label>
+
+                <select id="pickup-time">
+
+                    <option value="">
+                        Choose a time
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- PLACE ORDER -->
+
+            <button
+                class="place-order-button"
+                onclick="placeOrder()">
+
+                PLACE ORDER
+
+            </button>
+
+
+            <div id="order-message">
+            </div>
+  
+        </div>
+
+
+    </div> <!-- END menu-layout -->
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+
+    <div class="footer-main">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <h2>CineTella</h2>
+
+            <p class="footer-tagline">
+                SMARTBITE
+            </p>
+
+            <p>
+                Smart food ordering for busy students,
+                teachers and everyone who values their time.
+            </p>
+
+        </div>
+
+
+
+        <!-- EXPLORE -->
+
+        <div class="footer-links">
+
+            <h3>Explore</h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#taste">
+                Menu
+            </a>
+
+            <a href="index.html#taste">
+                Cuisines
+            </a>
+
+            <a href="how-it-works.html">
+                How It Works
+            </a>
+
+            <a href="order.html">
+                Order
+            </a>
+
+        </div>
+
+
+
+        <!-- CUISINES -->
+
+        <div class="footer-links">
+
+            <h3>Cuisines</h3>
+
+            <a href="pakistan.html">
+                🇵🇰 Pakistan
+            </a>
+
+            <a href="bangladesh.html">
+                🇧🇩 Bangladesh
+            </a>
+
+            <a href="india.html">
+                🇮🇳 India
+            </a>
+
+            <a href="china.html">
+                🇨🇳 China
+            </a>
+
+        </div>
+
+
+
+        <!-- SMARTBITE -->
+
+        <div class="footer-contact">
+
+            <h3>
+                Smart Food. Zero Wait.
+            </h3>
+
+            <p>
+                Choose your food.
+                <br>
+                Choose your time.
+                <br>
+                Pick up without the wait.
+            </p>
+
+            <a
+                href="order.html"
+                class="footer-button"
+            >
+                ORDER NOW →
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- DIVIDER -->
+
+    <div class="footer-line">
+    </div>
+
+
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 CineTella SmartBite.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Made for smarter food ordering.
+        </p>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

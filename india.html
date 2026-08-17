@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>India Cuisine - CineTella SmartBite</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            🍽️
+        </div>
+
+        <div class="logo-text">
+            <span>CineTella</span>
+            <small>SMARTBITE</small>
+        </div>
+
+    </div>
+
+
+    <div class="menu">
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#taste">
+            Menu
+        </a>
+
+        <a href="index.html#taste">
+            Cuisines
+        </a>
+
+        <a href="how-it-works.html">
+            How It Works
+        </a>
+
+        <a href="order.html" class="header-order">
+            Order Now →
+        </a>
+
+    </div>
+
+</header>
+
+
+    <!-- INDIA CUISINE -->
+
+    <section class="cuisine-page">
+
+
+        <div class="cuisine-heading">
+
+            <p>WELCOME TO</p>
+
+            <h1>India Cuisine</h1>
+
+            <p>
+                Enjoy delicious Indian flavors
+                and popular street food at CineTella.
+            </p>
+
+        </div>
+
+
+
+        <!-- FOOD + ORDER AREA -->
+
+        <div class="menu-layout">
+
+
+            <!-- FOOD LIST -->
+
+            <div class="food-list">
+
+
+                <!-- FOOD 1 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture masala-dosa"></div>
+
+                    <div class="food-info">
+
+                        <h2>Masala Dosa</h2>
+
+                        <p>
+                            Crispy South Indian dosa filled
+                            with spiced potatoes and served with chutney.
+                        </p>
+
+                        <h3>৳150</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="masala-dosa-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Masala Dosa', 150, document.getElementById('masala-dosa-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 2 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture pav-bhaji"></div>
+
+                    <div class="food-info">
+
+                        <h2>Pav Bhaji</h2>
+
+                        <p>
+                            Spiced vegetable curry served
+                            with soft toasted bread rolls.
+                        </p>
+
+                        <h3>৳140</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="pav-bhaji-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Pav Bhaji', 140, document.getElementById('pav-bhaji-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 3 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture idli-sambar"></div>
+
+                    <div class="food-info">
+
+                        <h2>Idli Sambar</h2>
+
+                        <p>
+                            Soft steamed rice cakes served
+                            with flavorful sambar and chutney.
+                        </p>
+
+                        <h3>৳120</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="idli-sambar-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Idli Sambar', 120, document.getElementById('idli-sambar-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 4 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture hakka-noodles"></div>
+
+                    <div class="food-info">
+
+                        <h2>Hakka Noodles</h2>
+
+                        <p>
+                            Stir-fried noodles tossed with
+                            vegetables and flavorful sauces.
+                        </p>
+
+                        <h3>৳170</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="hakka-noodles-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Hakka Noodles', 170, document.getElementById('hakka-noodles-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 5 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture vada-pav"></div>
+
+                    <div class="food-info">
+
+                        <h2>Vada Pav</h2>
+
+                        <p>
+                            Spiced potato fritter served inside
+                            a soft bun with chutneys.
+                        </p>
+
+                        <h3>৳100</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="vada-pav-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Vada Pav', 100, document.getElementById('vada-pav-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 6 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture aloo-paratha"></div>
+
+                    <div class="food-info">
+
+                        <h2>Aloo Paratha</h2>
+
+                        <p>
+                            Indian flatbread stuffed with
+                            seasoned potatoes and herbs.
+                        </p>
+
+                        <h3>৳120</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="aloo-paratha-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Aloo Paratha', 120, document.getElementById('aloo-paratha-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 7 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture pani-puri"></div>
+
+                    <div class="food-info">
+
+                        <h2>Pani Puri</h2>
+
+                        <p>
+                            Crispy puris filled with spiced
+                            potato, chutney and flavored water.
+                        </p>
+
+                        <h3>৳100</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="pani-puri-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Pani Puri', 100, document.getElementById('pani-puri-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 8 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture rasmalai"></div>
+
+                    <div class="food-info">
+
+                        <h2>Rasmalai</h2>
+
+                        <p>
+                            Soft cheese dumplings served
+                            in sweet and creamy milk.
+                        </p>
+
+                        <h3>৳120</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="rasmalai-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Rasmalai', 120, document.getElementById('rasmalai-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ORDER SUMMARY -->
+
+            <div class="order-summary">
+
+    <!-- ORDER TIMER -->
+    <div class="running-timer">
+
+        <span>⏱ Order Timer</span>
+
+        <strong id="order-timer">
+            00:00:00
+        </strong>
+
+    </div>
+
+
+    <!-- CURRENT TIME -->
+    <div class="current-time">
+
+        <span>🕐 Current Time</span>
+
+        <strong id="current-time">
+            00:00:00
+        </strong>
+
+    </div>
+
+
+    <h2>Your Order</h2>
+
+
+                <div id="order-list">
+
+                </div>
+
+
+                <h3 id="total-price">
+                    Total: ৳0
+                </h3>
+
+
+                <div class="pickup-section">
+
+                    <label for="pickup-time">
+                        Select Pickup Time
+                    </label>
+
+                    <select id="pickup-time">
+
+                        <option value="">Choose a time</option>
+
+                        <option value="12:30 PM">12:30 PM</option>
+
+                        <option value="1:00 PM">1:00 PM</option>
+
+                        <option value="1:30 PM">1:30 PM</option>
+
+                        <option value="2:00 PM">2:00 PM</option>
+
+                        <option value="2:30 PM">2:30 PM</option>
+
+                        <option value="3:00 PM">3:00 PM</option>
+
+                        <option value="3:30 PM">3:30 PM</option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="place-order-button"
+                    onclick="placeOrder()"
+                >
+
+                    PLACE ORDER
+
+                </button>
+
+
+                <div id="order-message">
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+  <!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <h2>CineTella</h2>
+
+            <p class="footer-tagline">
+                SMARTBITE
+            </p>
+
+            <p>
+                Smart food ordering for busy students,
+                teachers and everyone who values their time.
+            </p>
+
+        </div>
+
+
+        <!-- EXPLORE -->
+
+        <div class="footer-links">
+
+            <h3>Explore</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#taste">Menu</a>
+
+            <a href="index.html#taste">Cuisines</a>
+
+            <a href="how-it-works.html">How It Works</a>
+
+            <a href="order.html">Order</a>
+
+        </div>
+
+
+        <!-- CUISINES -->
+
+        <div class="footer-links">
+
+            <h3>Cuisines</h3>
+
+            <a href="pakistan.html">🇵🇰 Pakistan</a>
+
+            <a href="bangladesh.html">🇧🇩 Bangladesh</a>
+
+            <a href="india.html">🇮🇳 India</a>
+
+            <a href="china.html">🇨🇳 China</a>
+
+        </div>
+
+
+        <!-- SMARTBITE -->
+
+        <div class="footer-contact">
+
+            <h3>Smart Food. Zero Wait.</h3>
+
+            <p>
+                Choose your food.
+                <br>
+                Choose your time.
+                <br>
+                Pick up without the wait.
+            </p>
+
+            <a href="order.html" class="footer-button">
+                ORDER NOW →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- DIVIDER -->
+
+    <div class="footer-line"></div>
+
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 CineTella SmartBite. All Rights Reserved.
+        </p>
+
+        <p>
+            Made for smarter food ordering.
+        </p>
+
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

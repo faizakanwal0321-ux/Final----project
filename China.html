@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>China Cuisine - CineTella SmartBite</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <header class="header">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            🍽️
+        </div>
+
+        <div class="logo-text">
+            <span>CineTella</span>
+            <small>SMARTBITE</small>
+        </div>
+
+    </div>
+
+
+    <div class="menu">
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#taste">
+            Menu
+        </a>
+
+        <a href="index.html#taste">
+            Cuisines
+        </a>
+
+        <a href="how-it-works.html">
+            How It Works
+        </a>
+
+        <a href="order.html" class="header-order">
+            Order Now →
+        </a>
+
+    </div>
+
+</header>
+
+
+
+    <!-- CHINA CUISINE -->
+
+    <section class="cuisine-page">
+
+
+        <div class="cuisine-heading">
+
+            <p>WELCOME TO</p>
+
+            <h1>🇨🇳 China Cuisine</h1>
+
+            <p>
+                Enjoy delicious Chinese flavors
+                and popular favorites at CineTella.
+            </p>
+
+        </div>
+
+
+
+        <!-- FOOD + ORDER AREA -->
+
+        <div class="menu-layout">
+
+
+            <!-- FOOD LIST -->
+
+            <div class="food-list">
+
+
+                <!-- FOOD 1 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture chicken-chowmein"></div>
+
+                    <div class="food-info">
+
+                        <h2>Chicken Chow Mein</h2>
+
+                        <p>
+                            Stir-fried noodles with tender
+                            chicken and fresh vegetables.
+                        </p>
+
+                        <h3>৳180</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="chowmein-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Chicken Chow Mein', 180, document.getElementById('chowmein-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 2 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture fried-rice"></div>
+
+                    <div class="food-info">
+
+                        <h2>Yangzhou Fried Rice</h2>
+
+                        <p>
+                            Fragrant fried rice prepared with
+                            egg, vegetables and savory seasoning.
+                        </p>
+
+                        <h3>৳170</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="fried-rice-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Yangzhou Fried Rice', 170, document.getElementById('fried-rice-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 3 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture dumplings"></div>
+
+                    <div class="food-info">
+
+                        <h2>Chicken Dumplings</h2>
+
+                        <p>
+                            Soft dumplings filled with seasoned
+                            chicken and served with dipping sauce.
+                        </p>
+
+                        <h3>৳160</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="dumplings-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Chicken Dumplings', 160, document.getElementById('dumplings-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 4 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture spring-rolls"></div>
+
+                    <div class="food-info">
+
+                        <h2>Spring Rolls</h2>
+
+                        <p>
+                            Crispy rolls filled with fresh
+                            vegetables and savory seasoning.
+                        </p>
+
+                        <h3>৳100</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="spring-rolls-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Spring Rolls', 100, document.getElementById('spring-rolls-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 5 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture kung-pao"></div>
+
+                    <div class="food-info">
+
+                        <h2>Kung Pao Chicken</h2>
+
+                        <p>
+                            Tender chicken cooked with peanuts,
+                            vegetables and a flavorful sauce.
+                        </p>
+
+                        <h3>৳220</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="kung-pao-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Kung Pao Chicken', 220, document.getElementById('kung-pao-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 6 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture sweet-sour"></div>
+
+                    <div class="food-info">
+
+                        <h2>Sweet & Sour Chicken</h2>
+
+                        <p>
+                            Crispy chicken served with
+                            vegetables in a sweet and sour sauce.
+                        </p>
+
+                        <h3>৳210</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="sweet-sour-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Sweet & Sour Chicken', 210, document.getElementById('sweet-sour-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 7 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture mapo-tofu"></div>
+
+                    <div class="food-info">
+
+                        <h2>Mapo Tofu</h2>
+
+                        <p>
+                            Soft tofu cooked with a rich,
+                            spicy and savory sauce.
+                        </p>
+
+                        <h3>৳180</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="mapo-tofu-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Mapo Tofu', 180, document.getElementById('mapo-tofu-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FOOD 8 -->
+
+                <div class="food-item">
+
+                    <div class="food-picture egg-tarts"></div>
+
+                    <div class="food-info">
+
+                        <h2>Egg Tarts</h2>
+
+                        <p>
+                            Soft custard filling baked inside
+                            a crisp and buttery pastry shell.
+                        </p>
+
+                        <h3>৳100</h3>
+
+                        <label>Quantity:</label>
+
+                        <input
+                            type="number"
+                            id="egg-tarts-quantity"
+                            value="1"
+                            min="1"
+                        >
+
+                        <button onclick="addOrder('Egg Tarts', 100, document.getElementById('egg-tarts-quantity').value)">
+                            Add to Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ORDER SUMMARY -->
+
+            <div class="order-summary">
+
+    <!-- ORDER TIMER -->
+    <div class="running-timer">
+
+        <span>⏱ Order Timer</span>
+
+        <strong id="order-timer">
+            00:00:00
+        </strong>
+
+    </div>
+
+
+    <!-- CURRENT TIME -->
+    <div class="current-time">
+
+        <span>🕐 Current Time</span>
+
+        <strong id="current-time">
+            00:00:00
+        </strong>
+
+    </div>
+
+
+    <h2>Your Order</h2>
+
+
+                <div id="order-list">
+
+                </div>
+
+
+                <h3 id="total-price">
+                    Total: ৳0
+                </h3>
+
+
+                <div class="pickup-section">
+
+                    <label for="pickup-time">
+                        Select Pickup Time
+                    </label>
+
+                    <select id="pickup-time">
+
+                        <option value="">Choose a time</option>
+
+                        <option value="12:30 PM">12:30 PM</option>
+
+                        <option value="1:00 PM">1:00 PM</option>
+
+                        <option value="1:30 PM">1:30 PM</option>
+
+                        <option value="2:00 PM">2:00 PM</option>
+
+                        <option value="2:30 PM">2:30 PM</option>
+
+                        <option value="3:00 PM">3:00 PM</option>
+
+                        <option value="3:30 PM">3:30 PM</option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="place-order-button"
+                    onclick="placeOrder()"
+                >
+
+                    PLACE ORDER
+
+                </button>
+
+
+                <div id="order-message">
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <h2>CineTella</h2>
+
+            <p class="footer-tagline">
+                SMARTBITE
+            </p>
+
+            <p>
+                Smart food ordering for busy students,
+                teachers and everyone who values their time.
+            </p>
+
+        </div>
+
+
+        <!-- EXPLORE -->
+
+        <div class="footer-links">
+
+            <h3>Explore</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#taste">Menu</a>
+
+            <a href="index.html#taste">Cuisines</a>
+
+            <a href="how-it-works.html">How It Works</a>
+
+            <a href="order.html">Order</a>
+
+        </div>
+
+
+        <!-- CUISINES -->
+
+        <div class="footer-links">
+
+            <h3>Cuisines</h3>
+
+            <a href="pakistan.html">🇵🇰 Pakistan</a>
+
+            <a href="bangladesh.html">🇧🇩 Bangladesh</a>
+
+            <a href="india.html">🇮🇳 India</a>
+
+            <a href="china.html">🇨🇳 China</a>
+
+        </div>
+
+
+        <!-- SMARTBITE -->
+
+        <div class="footer-contact">
+
+            <h3>Smart Food. Zero Wait.</h3>
+
+            <p>
+                Choose your food.
+                <br>
+                Choose your time.
+                <br>
+                Pick up without the wait.
+            </p>
+
+            <a href="order.html" class="footer-button">
+                ORDER NOW →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- DIVIDER -->
+
+    <div class="footer-line"></div>
+
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 CineTella SmartBite. All Rights Reserved.
+        </p>
+
+        <p>
+            Made for smarter food ordering.
+        </p>
+
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
